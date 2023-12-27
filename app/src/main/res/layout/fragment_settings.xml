@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="match_parent">
+
+        <!-- Logo -->
+        <ImageView
+            android:id="@+id/logoImageView"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:src="@drawable/logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="32dp" />
+
+        <TextView
+            android:id="@+id/Description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Settings"
+            android:textSize="28sp"
+            android:layout_marginStart="30dp"
+            android:layout_below="@id/logoImageView"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="10dp" />
+        <!-- Search View -->
+        <SearchView
+            android:id="@+id/searchView"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Description"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/rounded_edittext_background"
+            style="@style/CustomSearchViewStyle"
+            android:iconifiedByDefault="false" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/searchView"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginTop="10dp"
+            android:background="#808080"/>
+
+        <TextView
+            android:id="@+id/appearance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Appearance"
+            android:textSize="18sp"
+            android:layout_marginStart="15dp"
+            android:paddingLeft="10dp"
+            android:drawableLeft="@drawable/ic_appear"
+            android:layout_below="@id/searchView"
+            android:drawablePadding="8dp"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="40dp" />
+        <TextView
+            android:id="@+id/language"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Language and Region"
+            android:textSize="18sp"
+            android:layout_marginStart="15dp"
+            android:paddingLeft="10dp"
+            android:drawableLeft="@drawable/ic_lang"
+            android:layout_below="@id/appearance"
+            android:textColor="@android:color/black"
+            android:drawablePadding="8dp"
+            android:layout_marginTop="30dp" />
+        <TextView
+            android:id="@+id/accessibility"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Accessibility"
+            android:textSize="18sp"
+            android:layout_marginStart="15dp"
+            android:paddingLeft="10dp"
+            android:drawableLeft="@drawable/ic_access"
+            android:layout_below="@id/language"
+            android:textColor="@android:color/black"
+            android:drawablePadding="8dp"
+            android:layout_marginTop="30dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/accessibility"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginTop="10dp"
+            android:background="#808080"/>
+        <TextView
+            android:id="@+id/notification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Notification Preferences"
+            android:textSize="18sp"
+            android:layout_marginStart="15dp"
+            android:paddingLeft="10dp"
+            android:drawableLeft="@drawable/ic_notif"
+            android:layout_below="@id/accessibility"
+            android:textColor="@android:color/black"
+            android:drawablePadding="8dp"
+            android:layout_marginTop="30dp" />
+        <TextView
+            android:id="@+id/backup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Account Management"
+            android:textSize="18sp"
+            android:layout_marginStart="15dp"
+            android:paddingLeft="10dp"
+            android:drawableLeft="@drawable/ic_managr"
+            android:layout_below="@id/notification"
+            android:textColor="@android:color/black"
+            android:drawablePadding="8dp"
+            android:layout_marginTop="30dp" />
+        <TextView
+            android:id="@+id/privacy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Privacy and security"
+            android:textSize="18sp"
+            android:layout_marginStart="15dp"
+            android:paddingLeft="10dp"
+            android:drawableLeft="@drawable/ic_shield"
+            android:layout_below="@id/backup"
+            android:textColor="@android:color/black"
+            android:drawablePadding="8dp"
+            android:layout_marginTop="30dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/privacy"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginTop="10dp"
+            android:background="#808080"/>
+        <TextView
+            android:id="@+id/behavior"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Application behavior"
+            android:textSize="18sp"
+            android:layout_marginStart="15dp"
+            android:paddingLeft="10dp"
+            android:drawableLeft="@drawable/ic_behav"
+            android:layout_below="@id/privacy"
+            android:textColor="@android:color/black"
+            android:drawablePadding="8dp"
+            android:layout_marginTop="30dp" />
+        <TextView
+            android:id="@+id/advanced"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Advanced settings"
+            android:textSize="18sp"
+            android:layout_marginStart="25dp"
+            android:drawablePadding="8dp"
+            android:drawableLeft="@drawable/ic_adv"
+            android:layout_below="@id/behavior"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="30dp" />
+        <TextView
+            android:id="@+id/Manage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Backup and Restore"
+            android:textSize="18sp"
+            android:layout_marginStart="15dp"
+            android:paddingLeft="10dp"
+            android:drawableLeft="@drawable/ic_backup"
+            android:layout_below="@id/advanced"
+            android:textColor="@android:color/black"
+            android:drawablePadding="8dp"
+            android:layout_marginTop="30dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/Manage"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginTop="10dp"
+            android:background="#808080"/>
+        <TextView
+            android:id="@+id/Connect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Connected Accounts"
+            android:textSize="18sp"
+            android:layout_marginStart="15dp"
+            android:paddingLeft="10dp"
+            android:drawableLeft="@drawable/ic_connect"
+            android:layout_below="@id/Manage"
+            android:textColor="@android:color/black"
+            android:drawablePadding="8dp"
+            android:layout_marginTop="30dp" />
+        <TextView
+            android:id="@+id/Delete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Delete my Account"
+            android:textSize="18sp"
+            android:layout_marginStart="15dp"
+            android:paddingLeft="10dp"
+            android:drawableLeft="@drawable/ic_delete"
+            android:layout_below="@id/Connect"
+            android:textColor="@android:color/black"
+            android:drawablePadding="8dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="40dp"/>
+    </RelativeLayout>
+</ScrollView>

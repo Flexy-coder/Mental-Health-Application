@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">Mindful</string>
+    <string name="title_activity_dashboard">Dashboard</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="pcl5_instructions">Please read each question carefully and select the response that best describes how much you have been bothered by each symptom over the past month. There are no right or wrong answers. Rate each item based on how much you have been bothered by that symptom in the past month, including today.</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="title_home">Home</string>
+    <string name="title_profile">Profile</string>
+    <string name="terms_conditions_content">
+By utilizing the Mindful app, users acknowledge and agree to the following terms and conditions. Users must be at least 13 years old to access Mindful and assume responsibility for the accuracy of their provided information and safeguarding their account credentials. Mindful adheres to a strict Privacy Policy governing data handling and processing, with user consent implied by the use of the app. Users commit to refraining from any actions that may compromise app functionality, security, or violate legal standards. All content and intellectual property within Mindful are the sole property of the Mindful organization or its licensors, requiring explicit authorization for reproduction, distribution, or modification. By using Mindful, users agree to abide by and be bound by these terms and conditions.
+</string>
+
+    <string name="title_settings">Settings</string>
+    <string name="welcome_description">Welcome to Mindful. A safe haven for your mental health.</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="bai_instructions">Instructions:
+Welcome to the Beck Anxiety Inventory (BAI). This questionnaire is designed to measure the severity of anxiety symptoms. Read each statement carefully and select the response that best describes how you have been feeling during the past week, including today.
+
+For each statement, choose one of the four responses that reflects the intensity of your anxiety:
+
+There are no right or wrong answers, so please answer honestly and to the best of your ability. Your responses are confidential and will be used for assessment purposes only.
+
+        Thank you for your participation.</string>
+    <string name="bdi_instructions">Instructions:
+Welcome to the Beck Depression Inventory (BAI). This questionnaire is designed to measure the severity of depressive symptoms. Read each statement carefully and select the response that best describes how you have been feeling during the past week, including today.
+
+For each statement, choose one of the four responses that reflects how you have been feeling:
+
+There are no right or wrong answers, so please answer honestly and to the best of your ability. Your responses are confidential and will be used for assessment purposes only.
+
+        Thank you for your participation.</string>
+    <string name="not_logged_in_message">Your session is either logged off or you do not have an account. Please log in or create a new account.</string>
+
+    <string-array name="therapists_array">
+        <item>Dr. Lucy</item>
+        <item>Dr. Ivy</item>
+        <item>Dr. Smith</item>
+    </string-array>
+
+    <string-array name="days_of_week_array">
+        <item>Monday</item>
+        <item>Wednesday</item>
+        <item>Friday</item>
+    </string-array>
+    <string name="title_activity_admin">AdminActivity</string>
+    <string-array name="sorting_options">
+        <item>Sort by Name</item>
+        <item>Sort by Date</item>
+        <item>Sort by Rating</item>
+        <!-- Add more sorting options as needed -->
+    </string-array>
+
+    <string-array name="dashboard_descriptions">
+        <item>Profile Description</item>
+        <item>Appointments Description</item>
+        <item>Send Message Description</item>
+        <item>Notifications Description</item>
+        <item>Session Notes Description</item>
+        <item>Visual Reports Description</item>
+    </string-array>
+
+
+    <!-- Setting dialog -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_text_inhale">Inhale</string>
+    <string name="settings_text_exhale">Exhale</string>
+    <string name="settings_text_hold">Hold</string>
+    <string name="settings_text_close">Close</string>
+
+</resources>

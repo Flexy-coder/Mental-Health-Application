@@ -1,0 +1,5 @@
+<!-- res/drawable/received_message_background.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#E0E0E0" /> <!-- Background color for received messages -->
+    <corners android:radius="8dp" /> <!-- Rounded corners, adjust as needed -->
+</shape>

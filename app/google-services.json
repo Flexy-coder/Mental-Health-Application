@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "326295138558",
+    "project_id": "mindful-f1611",
+    "storage_bucket": "mindful-f1611.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:326295138558:android:1c2dbdf5cda6e5ebefb5af",
+        "android_client_info": {
+          "package_name": "com.fidel.mindful"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBIWbNb9aKfD7TExCxlBbIIsSl0xa1_LQk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

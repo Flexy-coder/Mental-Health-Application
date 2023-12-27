@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:src="@drawable/logo"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="40dp"
+        android:scaleType="fitXY"
+        android:layout_gravity="center" />
+    <!-- Notification Title -->
+    <TextView
+        android:id="@+id/editTextTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notifications"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/imageView"
+        android:layout_marginStart="120dp"
+        android:textAlignment="center" />
+
+    <!-- Notification Message -->
+    <TextView
+        android:id="@+id/textViewInstruction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter target user :"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/editTextTitle"
+        android:layout_marginStart="10dp"
+        android:textAlignment="center" />
+    <EditText
+        android:id="@+id/editTextMessage"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Target user ..."
+        android:paddingStart="10dp"
+        android:background="@drawable/edit_text_background"
+        android:layout_below="@id/textViewInstruction"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="10dp"
+        android:inputType="textMultiLine"
+        android:lines="3"/>
+    <TextView
+        android:id="@+id/textViewTarget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter notification message : "
+        android:textSize="18sp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/editTextMessage"
+        android:layout_marginStart="10dp"
+        android:textAlignment="center" />
+    <EditText
+        android:id="@+id/editTextTarget"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:paddingStart="10dp"
+        android:hint="Notification Message"
+        android:background="@drawable/edit_text_background"
+        android:layout_below="@id/textViewTarget"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="10dp"
+        android:inputType="textMultiLine"
+        android:lines="3"/>
+
+    <!-- Send Button -->
+    <Button
+        android:id="@+id/buttonSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send Notification"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:background="@drawable/button_background"
+        android:layout_below="@id/editTextTarget"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"/>
+</RelativeLayout>

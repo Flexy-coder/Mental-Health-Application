@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="16dp"
+    tools:context=".MusicActivity">
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="50dp"
+    android:layout_marginBottom="16dp"
+    android:src="@drawable/logo"/>
+    <TextView
+        android:id="@+id/textViewCurrentSong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Currently Playing:"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Spacer View -->
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginTop="30dp"
+        app:lottie_loop="true"
+        android:layout_marginStart="-5dp"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/music2" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/buttonSelectMusic"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_select"
+            android:textColor="@color/black"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Empty View to Create Space -->
+        <View
+            android:layout_width="16dp"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/buttonPlayPause"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:background="@drawable/ic_play"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"/>
+        <View
+            android:layout_width="16dp"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/buttonRewind"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:background="@drawable/ic_rewind"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"/>
+    </LinearLayout>
+
+</LinearLayout>

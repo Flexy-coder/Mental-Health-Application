@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/rounded_corners_layout">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:padding="8dp"
+    android:textSize="16sp"
+    android:layout_marginBottom="10dp"
+    android:text="We would like to know more about your current educational background to help serve you better. Please provide the following information."
+    android:textAlignment="center"/>
+    <EditText
+        android:id="@+id/regNoEditText"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_weight="1"
+        android:inputType="text"
+        android:textSize="14sp"
+        android:hint="Registration Number..." />
+
+    <EditText
+        android:id="@+id/courseEditText"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_weight="1"
+        android:inputType="text"
+        android:textSize="14sp"
+        android:hint="Course..." />
+
+    <EditText
+        android:id="@+id/yearEditText"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_weight="1"
+        android:inputType="text"
+        android:textSize="14sp"
+        android:hint="Year of Study..." />
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:background="@drawable/button_background"
+        android:text="Submit" />
+</LinearLayout>

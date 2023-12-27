@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:padding="8dp"
+    android:layout_gravity="center">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+<ImageView
+    android:id="@+id/imageProfile"
+    android:layout_width="70dp"
+    android:layout_height="80dp"
+    android:src="@drawable/users"
+    android:layout_marginStart="0dp"/>
+    <!-- Customize the layout to display notification data -->
+    <TextView
+        android:id="@+id/textViewDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imageProfile"
+        android:text="Video session: "
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_toEndOf="@id/textViewDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" "
+        android:textSize="13sp" />
+    <TextView
+        android:id="@+id/textViewData1"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@id/imageProfile"
+        android:layout_below="@id/textViewDescription"
+        android:layout_height="wrap_content"
+        android:text="with Therapist "
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/textViewFullName"
+        android:layout_width="wrap_content"
+        android:layout_toEndOf="@id/textViewData1"
+        android:layout_below="@id/textViewDescription"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="13sp" />
+    <TextView
+        android:id="@+id/textViewData2"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@id/imageProfile"
+
+        android:layout_below="@id/textViewData1"
+        android:layout_height="wrap_content"
+        android:text="from"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/textViewStartTime"
+        android:layout_width="wrap_content"
+        android:layout_toEndOf="@id/textViewData2"
+        android:layout_below="@id/textViewData1"
+        android:layout_height="wrap_content"
+        android:text=" "
+        android:layout_marginStart="5dp"
+        android:textSize="13sp" />
+    <TextView
+        android:id="@+id/textViewData3"
+        android:layout_width="wrap_content"
+        android:layout_toEndOf="@id/textViewStartTime"
+        android:layout_below="@id/textViewData1"
+        android:layout_height="wrap_content"
+        android:text="on"
+        android:layout_marginStart="5dp"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/textViewStartDate"
+        android:layout_width="wrap_content"
+        android:layout_toEndOf="@id/textViewData3"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewData1"
+        android:layout_marginStart="5dp"
+        android:text=" "
+        android:textSize="13sp" />
+        <TextView
+            android:id="@+id/textViewData4"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/textViewStartDate"
+            android:layout_height="wrap_content"
+            android:text="The password is"
+            android:layout_toRightOf="@id/imageProfile"
+            android:textSize="13sp" />
+        <TextView
+            android:id="@+id/textViewPassword"
+            android:layout_width="wrap_content"
+            android:layout_toEndOf="@id/textViewData4"
+            android:layout_below="@id/textViewStartDate"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text=""
+            android:textSize="13sp" />
+    <!-- Add more views to display other notification data as needed -->
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

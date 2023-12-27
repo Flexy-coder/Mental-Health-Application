@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="120dp"
+            android:src="@drawable/logo"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitXY"
+            android:layout_gravity="center" />
+
+        <GridLayout
+            android:id="@+id/gridLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView"
+            android:columnCount="2"
+            android:rowCount="3"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:padding="16dp"
+            android:gravity="center"
+            android:layout_alignParentStart="true">
+
+            <!-- Profile -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="180dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="16dp"
+                app:cardBackgroundColor="#D3D3D3">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <!-- LottieAnimationViews for each item -->
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/lottieAnimationViewProfile"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center"
+                        app:lottie_autoPlay="true"
+                        app:lottie_rawRes="@raw/dash"
+                        app:lottie_loop="true" />
+
+                    <!-- Description for Profile -->
+                    <TextView
+                        android:id="@+id/textViewProfile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Profile"
+                        android:textSize="18sp"
+                        android:layout_gravity="center" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Calendar -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="180dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="16dp"
+                app:cardBackgroundColor="#D3D3D3">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <!-- LottieAnimationViews for each item -->
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/lottieAnimationViewCalendar"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center"
+                        app:lottie_autoPlay="true"
+                        app:lottie_rawRes="@raw/appoint"
+                        app:lottie_loop="true" />
+
+                    <!-- Description for Calendar -->
+                    <TextView
+                        android:id="@+id/textViewCalendar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Appointments"
+                        android:textSize="18sp"
+                        android:layout_gravity="center" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Message -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="180dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="16dp"
+                app:cardBackgroundColor="#D3D3D3">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <!-- LottieAnimationViews for each item -->
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/lottieAnimationViewMessage"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center"
+                        app:lottie_autoPlay="true"
+                        app:lottie_rawRes="@raw/talk"
+                        app:lottie_loop="true" />
+
+                    <!-- Description for Message -->
+                    <TextView
+                        android:id="@+id/textViewMessage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Conversations"
+                        android:textSize="18sp"
+                        android:layout_gravity="center" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Notification -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="180dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="16dp"
+                app:cardBackgroundColor="#D3D3D3">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <!-- LottieAnimationViews for each item -->
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/lottieAnimationViewNotification"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center"
+                        app:lottie_rawRes="@raw/notification"
+                        app:lottie_autoPlay="true"
+                        app:lottie_loop="true" />
+
+                    <!-- Description for Notification -->
+                    <TextView
+                        android:id="@+id/textViewNotification"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Chatrooms"
+
+                        android:textSize="18sp"
+                        android:layout_gravity="center" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Notes -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="180dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="16dp"
+                app:cardBackgroundColor="#D3D3D3">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <!-- LottieAnimationViews for each item -->
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/lottieAnimationViewNotes"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center"
+                        app:lottie_autoPlay="true"
+                        app:lottie_rawRes="@raw/notes"
+                        app:lottie_loop="true" />
+
+                    <!-- Description for Notes -->
+                    <TextView
+                        android:id="@+id/textViewNotes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Notes"
+                        android:textSize="18sp"
+                        android:layout_gravity="center" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Reports -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="180dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="16dp"
+                app:cardBackgroundColor="#D3D3D3">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <!-- LottieAnimationViews for each item -->
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/lottieAnimationViewReports"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center"
+                        app:lottie_rawRes="@raw/hub"
+                        app:lottie_autoPlay="true"
+                        app:lottie_loop="true" />
+
+                    <!-- Description for Reports -->
+                    <TextView
+                        android:id="@+id/textViewReports"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Reports"
+                        android:textSize="18sp"
+                        android:layout_gravity="center" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </GridLayout>
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardView"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".OnboardingActivity2">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageViewLogo"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="100dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/logo"/>
+
+            <TextView
+                android:id="@+id/headerText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hey there,"
+                android:textStyle="bold"
+                android:layout_below="@+id/imageViewLogo"
+                android:layout_marginStart="40dp"
+                android:textSize="23sp"/>
+            <TextView
+                android:id="@+id/usernameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Username"
+                android:textStyle="bold"
+                android:layout_toEndOf="@id/headerText"
+                android:layout_below="@+id/imageViewLogo"
+                android:layout_marginStart="10dp"
+                android:textSize="23sp"/>
+
+            <TextView
+                android:id="@+id/instructions"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/headerText"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="3dp"
+                android:text="For therapy and counselling purposes, the following questions have been presented to you, for us to have a better understanding about you. Please answer as freely and honestly as you can."
+                android:textAlignment="center"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/genderTextView"
+                android:layout_below="@+id/instructions"
+                android:layout_width="320dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="10dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:text="State your gender"/>
+
+
+            <RadioGroup
+                android:id="@+id/radioGroupGender"
+                android:layout_width="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_below="@+id/genderTextView"
+                android:layout_height="wrap_content">
+
+                <!-- Random Options for Question 1 -->
+                <RadioButton
+                    android:id="@+id/option1_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male"/>
+
+                <RadioButton
+                    android:id="@+id/option1_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female"/>
+
+
+            </RadioGroup>
+            <TextView
+                android:id="@+id/ageTextView"
+                android:layout_below="@+id/radioGroupGender"
+                android:layout_width="320dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="10dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:text="State your age"/>
+            <EditText
+                android:id="@+id/editTextAge"
+                android:layout_width="350dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/ageTextView"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edit_text_background"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/textViewBirthOrder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_below="@+id/editTextAge"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:text="State your birth order(First born, second born...)"/>
+
+            <EditText
+                android:id="@+id/editTextBirthOrder"
+                android:layout_width="350dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/textViewBirthOrder"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edit_text_background"
+                android:padding="10dp" />
+
+
+            <TextView
+                android:id="@+id/textViewFamily"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editTextBirthOrder"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="Which of the descriptions below describes best you family structure?"/>
+
+            <RadioGroup
+                android:id="@+id/radioGroupFamily"
+                android:layout_width="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_below="@+id/textViewFamily"
+                android:layout_height="wrap_content">
+
+                <!-- Random Options for Question 1 -->
+                <RadioButton
+                    android:id="@+id/option2_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Single mum family"/>
+
+                <RadioButton
+                    android:id="@+id/option2_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Single dad family"/>
+                <RadioButton
+                    android:id="@+id/option2_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Both parents are present"/>
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textViewHistory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radioGroupFamily"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="Do you have any significant medical history regarding your mental health(If yes please specify?"/>
+
+            <EditText
+                android:id="@+id/editTextHistory"
+                android:layout_width="350dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/textViewHistory"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edit_text_background"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/textViewConsumption"
+                android:layout_width="330dp"
+                android:layout_below="@id/editTextHistory"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="Do you indulge in alcohol consumption?"/>
+
+
+            <RadioGroup
+                android:id="@+id/radioGroupConsumption"
+                android:layout_width="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_below="@+id/textViewConsumption"
+                android:layout_height="wrap_content">
+
+                <!-- Random Options for Question 1 -->
+                <RadioButton
+                    android:id="@+id/option3_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Once in a while alcohol consumption"/>
+
+                <RadioButton
+                    android:id="@+id/option3_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Zero alcohol consumption"/>
+
+
+            </RadioGroup>
+
+
+
+            <TextView
+                android:id="@+id/textViewInteractions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radioGroupConsumption"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="How would you describe yourself with regards to social interactions"/>
+
+            <RadioGroup
+                android:id="@+id/radioGroupInteractions"
+                android:layout_width="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_below="@+id/textViewInteractions"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/option4_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Socially outgoing"/>
+
+                <RadioButton
+                    android:id="@+id/option4_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Introvert"/>
+                <RadioButton
+                    android:id="@+id/option4_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ambivert"/>
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textViewFriends"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/radioGroupInteractions"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="Briefly describe the personality traits of your friends"/>
+
+            <EditText
+                android:id="@+id/editTextFriends"
+                android:layout_width="350dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/textViewFriends"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:inputType="text"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edit_text_background"
+                android:padding="10dp" />
+
+
+
+            <Button
+                android:id="@+id/createProfileButton"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:layout_below="@id/editTextFriends"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginStart="80dp"
+                android:layout_marginEnd="10dp"
+                android:textColor="@android:color/black"
+                android:background="@drawable/button_background"
+                android:padding="12dp"
+                android:gravity="center"/>
+        </RelativeLayout>
+    </ScrollView>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,163 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/searchEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search by Username"
+        android:padding="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:textSize="16sp"
+        android:visibility="gone"
+        android:textColorHint="#8E8E93"
+        android:background="@drawable/edit_text_background"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="22dp"
+            android:padding="16dp"
+            android:elevation="4dp">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/dialogUserId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" UserId:"
+                        android:layout_marginStart="10dp"
+                        android:textSize="15sp"
+                        android:textColor="#000000"
+                        android:layout_marginTop="10dp"/>
+                    <TextView
+                        android:id="@+id/dialogUsername"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" Username:"
+                        android:layout_marginStart="10dp"
+                        android:textSize="15sp"
+                        android:textColor="#000000"
+                        android:visibility="gone"
+                        android:layout_below="@id/dialogUserId"
+                        android:layout_marginTop="10dp"/>
+                    <TextView
+                        android:id="@+id/dialogAge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" Age:"
+                        android:layout_marginStart="10dp"
+                        android:textSize="15sp"
+                        android:layout_below="@id/dialogUsername"
+                        android:textColor="#000000"
+                        android:layout_marginTop="10dp"/>
+                    <TextView
+                        android:id="@+id/dialogGender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gender:"
+                        android:layout_marginStart="10dp"
+                        android:textSize="15sp"
+                        android:textColor="#000000"
+                        android:layout_below="@id/dialogAge"
+                        android:layout_marginTop="10dp"/>
+                    <TextView
+                        android:id="@+id/dialogBirthOrder"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Birth Order:"
+                        android:layout_marginStart="10dp"
+                        android:layout_below="@id/dialogGender"
+                        android:textSize="15sp"
+                        android:textColor="#000000"
+                        android:layout_marginTop="10dp"/>
+
+                    <TextView
+                        android:id="@+id/dialogMedicalHistory"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Medical History:"
+                        android:layout_marginStart="10dp"
+                        android:textSize="15sp"
+                        android:textColor="#000000"
+                        android:layout_below="@id/dialogBirthOrder"
+                        android:layout_marginTop="10dp"/>
+
+                    <TextView
+                        android:id="@+id/dialogFriendDescription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Friend Description:"
+                        android:layout_marginStart="10dp"
+                        android:textSize="15sp"
+                        android:textColor="#000000"
+                        android:layout_below="@id/dialogMedicalHistory"
+                        android:layout_marginTop="10dp"/>
+
+
+
+                    <TextView
+                        android:id="@+id/dialogFamilyStructure"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Family Structure:"
+                        android:layout_marginStart="10dp"
+                        android:textSize="15sp"
+                        android:textColor="#000000"
+                        android:layout_below="@id/dialogFriendDescription"
+                        android:layout_marginTop="10dp"/>
+
+                    <TextView
+                        android:id="@+id/dialogAlcoholConsumption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Alcohol Consumption:"
+                        android:layout_marginStart="10dp"
+                        android:textSize="15sp"
+                        android:textColor="#000000"
+                        android:layout_below="@id/dialogFamilyStructure"
+                        android:layout_marginTop="10dp"/>
+
+                    <TextView
+                        android:id="@+id/dialogSocialInteractions"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="Social Interactions:"
+                        android:textSize="15sp"
+                        android:textColor="#000000"
+                        android:layout_below="@id/dialogAlcoholConsumption"
+                        android:layout_marginTop="10dp"/>
+
+                    <Button
+                        android:id="@+id/buttonClose"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Close"
+                        android:visibility="gone"
+                        android:layout_below="@id/dialogSocialInteractions"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"/>
+
+
+                </RelativeLayout>
+            </ScrollView>
+
+        </androidx.cardview.widget.CardView>
+
+    </ScrollView>
+</LinearLayout>

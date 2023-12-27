@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:id="@+id/first"
+                    android:layout_width="30dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_user"
+                    android:layout_marginEnd="10dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"/>
+
+                <ImageView
+                    android:id="@+id/second"
+                    android:layout_width="30dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_bell"
+                    android:layout_toStartOf="@id/first"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="40dp"/>
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Self-Assessment "
+                android:textSize="30sp"
+                android:layout_gravity="left"
+                android:layout_marginStart="15dp"
+                android:fontFamily="@font/architects"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="8dp"/>
+
+            <ImageView
+                android:id="@+id/anxiety"
+                android:layout_width="wrap_content"
+                android:layout_height="180dp"
+                android:src="@drawable/anx10"
+                android:scaleType="centerCrop"
+                android:layout_margin="14dp"/>
+
+            <ImageView
+                android:id="@+id/depression"
+                android:layout_width="wrap_content"
+                android:layout_height="180dp"
+                android:src="@drawable/dep10"
+                android:scaleType="centerCrop"
+                android:layout_margin="14dp"/>
+
+            <ImageView
+                android:id="@+id/drugs"
+                android:layout_width="wrap_content"
+                android:layout_height="180dp"
+                android:src="@drawable/drg10"
+                android:scaleType="centerCrop"
+                android:layout_margin="14dp"/>
+
+            <ImageView
+                android:id="@+id/ptsd"
+                android:layout_width="wrap_content"
+                android:layout_height="180dp"
+                android:src="@drawable/ptsd10"
+                android:scaleType="centerCrop"
+                android:layout_margin="14dp"/>
+
+            <!-- Add more ImageView elements for additional images -->
+            <TextView
+                android:id="@+id/counsel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Counselling"
+                android:textSize="30sp"
+                android:layout_gravity="left"
+                android:layout_marginStart="15dp"
+                android:fontFamily="@font/architects"
+                android:layout_marginTop="10dp"
+                />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/imageRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/treat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Treatment plan"
+                android:textSize="30sp"
+                android:layout_gravity="left"
+                android:layout_marginStart="15dp"
+                android:fontFamily="@font/architects"
+                android:layout_marginTop="10dp"
+                />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/imageRecyclerView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

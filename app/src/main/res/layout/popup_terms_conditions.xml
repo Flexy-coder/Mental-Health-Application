@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="16dp"
+    android:backgroundTint="@color/white"
+    android:radius="12dp"
+    app:cardElevation="4dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="Terms and Conditions"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo"/>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_below="@id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/textViewTermsConditions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/terms_conditions_content"
+            android:textSize="16sp" />
+    </ScrollView>
+    <CheckBox
+        android:id="@+id/checkBoxAgree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/scrollView"
+        android:layout_marginTop="20dp"
+        android:text="I agree to the terms and conditions"
+        android:textSize="16sp"
+        android:layout_centerInParent="true" />
+    <Button
+        android:id="@+id/buttonAccept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Accept"
+        android:layout_below="@id/checkBoxAgree"
+        android:layout_marginBottom="40dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="50dp"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="10dp"
+        android:textColor="@color/black"
+        android:background="@drawable/button_background" />
+
+    <Button
+        android:id="@+id/buttonCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:layout_below="@id/checkBoxAgree"
+        android:layout_marginBottom="40dp"
+        android:textColor="@color/black"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="10dp"
+        android:background="@drawable/button_background"
+        android:layout_toEndOf="@id/buttonAccept"
+        />
+</RelativeLayout>
+</androidx.cardview.widget.CardView>

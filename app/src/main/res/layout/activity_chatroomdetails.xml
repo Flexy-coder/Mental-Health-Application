@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:src="@drawable/logo"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="20dp"
+        android:scaleType="fitXY"
+        android:layout_gravity="center" />
+    <!-- Notification Title -->
+    <TextView
+        android:id="@+id/editTextTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create a chatroom"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/imageView"
+        android:layout_marginStart="80dp"
+        android:textAlignment="center" />
+    <TextView
+        android:id="@+id/uploadImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextTitle"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:textSize="18sp"
+        android:text="Click below to upload profile image"/>
+    <ImageView
+        android:id="@+id/profileImageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/ic_user"
+        android:layout_below="@+id/uploadImage"
+        android:layout_marginTop="5dp"
+        android:scaleType="centerCrop"
+        android:layout_marginStart="100dp"
+        android:layout_gravity="center"
+        android:contentDescription="Profile Image"/>
+
+    <ImageButton
+        android:id="@+id/buttonUploadIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_add_a_photo_24"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:layout_alignBottom="@id/profileImageView"
+        android:layout_alignEnd="@id/profileImageView"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"/>
+
+
+    <!-- Notification Message -->
+    <TextView
+        android:id="@+id/textViewInstruction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter chatroom name :"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/profileImageView"
+        android:layout_marginStart="10dp"
+        android:textAlignment="center" />
+    <EditText
+        android:id="@+id/editTextChatname"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Chatroom name ..."
+        android:paddingStart="10dp"
+        android:background="@drawable/edit_text_background"
+        android:layout_below="@id/textViewInstruction"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:inputType="textMultiLine"
+        android:lines="3"/>
+    <TextView
+        android:id="@+id/textViewTarget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter brief description : "
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/editTextChatname"
+        android:layout_marginStart="10dp"
+        android:textAlignment="center" />
+    <EditText
+        android:id="@+id/editTextChatDescription"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:paddingStart="10dp"
+        android:hint="Chatroom description :"
+        android:background="@drawable/edit_text_background"
+        android:layout_below="@id/textViewTarget"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:inputType="textMultiLine"
+        android:lines="3"/>
+
+    <!-- Send Button -->
+    <Button
+        android:id="@+id/buttonCreate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create chatroom"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:background="@drawable/button_background"
+        android:layout_below="@id/editTextChatDescription"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"/>
+
+    <TextView
+        android:id="@+id/existingRooms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Or use existing chatrooms"
+        android:textSize="16sp"
+        android:layout_below="@id/buttonCreate"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="65dp"
+        android:textAlignment="center"/>
+</RelativeLayout>

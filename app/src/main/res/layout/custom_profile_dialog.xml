@@ -1,0 +1,101 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Profile information"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputLayoutFullName"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewTitle"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:clickable="false"
+            android:hint="Full Name"
+            android:focusable="false">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/dialogFullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textColor="#808080"
+                android:focusableInTouchMode="false"
+                android:maxLines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputLayoutDescription"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/inputLayoutFullName"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            android:clickable="true"
+            android:hint="Description.."
+            android:focusable="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/dialogDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:focusableInTouchMode="true"
+                android:maxLines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/buttonSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save changes"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="20dp"
+            android:layout_below="@id/inputLayoutDescription"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:layout_marginBottom="30dp"
+            android:enabled="false" />
+
+        <Button
+            android:id="@+id/buttonOkay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/inputLayoutDescription"
+            android:layout_toEndOf="@id/buttonSubmit"
+            android:text="Close"
+            android:visibility="gone"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            android:enabled="true" />
+    </RelativeLayout>
+
+
+
+
+
+
+
+</ScrollView>

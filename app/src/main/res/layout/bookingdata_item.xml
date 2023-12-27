@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:elevation="4dp"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+        <TextView
+            android:id="@+id/greetingTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello," />
+        <TextView
+            android:id="@+id/useridTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User ID: "
+            android:layout_marginStart="2dp"
+            android:layout_toEndOf="@id/greetingTextView"
+            android:layout_alignParentTop="true" />
+
+        <TextView
+            android:id="@+id/messageTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Message: "
+            android:layout_below="@id/greetingTextView"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/forTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="For "
+            android:layout_below="@id/messageTextView"
+            android:layout_marginTop="8dp" />
+        <TextView
+            android:id="@+id/selectedDateTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selected Date: "
+            android:layout_toEndOf="@id/forTextView"
+            android:layout_below="@id/messageTextView"
+            android:layout_marginTop="8dp" />
+        <TextView
+            android:id="@+id/atTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="At "
+            android:layout_below="@id/forTextView"
+            android:layout_marginTop="8dp" />
+        <TextView
+            android:id="@+id/selectedTimeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selected Time: "
+            android:layout_toEndOf="@id/atTextView"
+            android:layout_below="@id/forTextView"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/timePeriodTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time"
+            android:layout_below="@id/forTextView"
+            android:layout_toEndOf="@id/selectedTimeTextView"
+            android:layout_marginTop="8dp" />
+
+
+        <!-- Add other TextViews for additional fields -->
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

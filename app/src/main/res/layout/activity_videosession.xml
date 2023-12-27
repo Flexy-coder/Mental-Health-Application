@@ -1,0 +1,121 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/logo"/>
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageViewLogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Schedule a video call"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textTherapistName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text=""
+        android:textSize="18sp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputLayoutName"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textTherapistName"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        android:hint="Name of meeting">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:maxLines="1" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputLayoutRegNo"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inputLayoutName"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        android:hint="Start time">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextRegNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="time"
+            android:maxLines="1" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputLayoutCourse"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inputLayoutRegNo"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        android:hint="Start Date">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextCourse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:maxLines="1" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputLayoutDayOfWeek"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inputLayoutCourse"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        android:hint="Session password">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextDayOfWeek"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:maxLines="1" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/buttonSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inputLayoutDayOfWeek"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="Submit" />
+
+
+
+
+</RelativeLayout>

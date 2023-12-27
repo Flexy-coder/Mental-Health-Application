@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <!-- TextView to display the user's full name -->
+    <TextView
+        android:id="@+id/fullNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send Message"
+        android:fontFamily="@font/architects"
+        android:textSize="24sp"
+        android:textColor="@android:color/black"
+        android:layout_gravity="center"/>
+
+    <!-- EditText for message input -->
+    <EditText
+        android:id="@+id/messageEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Write your message..."
+        android:maxLines="4"
+        android:textSize="16sp"
+        android:gravity="center"/>
+
+    <!-- Button to submit the message -->
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:background="?android:attr/selectableItemBackground"/>
+</LinearLayout>

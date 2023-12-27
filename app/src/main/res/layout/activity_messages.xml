@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MessagesActivity">
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="120dp"
+        android:src="@drawable/logo"/>
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_below="@id/logo"
+        android:layout_marginStart="10dp"
+        android:textAlignment="center"
+        android:text="Choose your preferred method of communicating with your clients"
+        android:textSize="22sp"
+        android:layout_marginTop="25dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/roundedCardView"
+        android:layout_below="@+id/description"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="16dp"
+        app:cardBackgroundColor="@color/white">
+
+        <TextView
+            android:id="@+id/textViewMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Message a user"
+            android:background="@color/white"
+            android:textSize="20sp"
+            android:clickable="true"
+            android:onClick="onMessageClick"
+            android:layout_gravity="center"
+            android:padding="16dp"/>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/roundedCardViewChatroom"
+        android:layout_below="@+id/roundedCardView"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="16dp"
+        app:cardBackgroundColor="@color/white">
+
+        <TextView
+            android:id="@+id/textViewChatroom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create chatroom"
+            android:textSize="20sp"
+            android:background="@color/white"
+            android:onClick="onChatroomClick"
+            android:clickable="true"
+            android:layout_gravity="center"
+            android:padding="16dp"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/roundedCardViewNewChatroom"
+        android:layout_below="@+id/roundedCardViewChatroom"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="16dp"
+        app:cardBackgroundColor="@color/white">
+
+        <TextView
+            android:id="@+id/textViewNewChatroom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Set reminder"
+            android:textSize="20sp"
+            android:background="@color/white"
+            android:onClick="onChatroomClick"
+            android:clickable="true"
+            android:layout_gravity="center"
+            android:padding="16dp"/>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/roundedCardViewNotification"
+        android:layout_below="@+id/roundedCardViewNewChatroom"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="16dp"
+        app:cardBackgroundColor="@color/white">
+
+        <TextView
+            android:id="@+id/textViewNotification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send a notification"
+            android:textSize="20sp"
+            android:background="@color/white"
+            android:layout_gravity="center"
+            android:padding="16dp"/>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

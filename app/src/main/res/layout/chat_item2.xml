@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:id="@+id/left_chat_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="80dp"
+        android:padding="8dp"
+        android:background="@drawable/rounded_corner"
+        android:backgroundTint="#1E88E5"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/left_profile_image"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/br"
+            android:background="@drawable/circular_background"
+            android:layout_marginEnd="8dp" />
+        <TextView
+            android:id="@+id/left_chat_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_marginStart="8dp"/>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/right_chat_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="80dp"
+        android:padding="8dp"
+        android:background="@drawable/rounded_corner"
+        android:backgroundTint="#7CB342"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/right_profile_image"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/users"
+            android:background="@drawable/circular_background"
+            android:layout_marginEnd="8dp" />
+        <TextView
+            android:id="@+id/right_chat_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_marginEnd="8dp"/>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

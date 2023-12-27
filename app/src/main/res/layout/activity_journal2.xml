@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Journal Title -->
+    <TextView
+        android:id="@+id/textViewJournalTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Journal"
+        android:textSize="24sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Journal Entry Title -->
+    <EditText
+        android:id="@+id/editTextEntryTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Entry Title"
+        android:inputType="textCapSentences"
+        android:padding="8dp"
+        android:textSize="18sp"
+        android:background="@drawable/edit_text_background"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Journal Entry Content -->
+    <EditText
+        android:id="@+id/editTextEntryContent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:hint="Write your journal entry here"
+        android:inputType="textMultiLine"
+        android:padding="8dp"
+        android:textSize="16sp"
+        android:gravity="top"
+        android:background="@drawable/edit_text_background"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Save Button -->
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save Entry"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/round_button_background"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>

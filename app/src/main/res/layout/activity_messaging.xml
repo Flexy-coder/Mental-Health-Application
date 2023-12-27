@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Messaging Title -->
+
+
+    <!-- RecyclerView for Messages -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewMessages"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/layoutMessageInput"
+        android:layout_marginTop="16dp"
+        android:padding="8dp"
+        android:background="#D0D0D0"
+        android:scrollbars="vertical" />
+
+    <!-- Message Input Layout -->
+    <LinearLayout
+        android:id="@+id/layoutMessageInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:background="@android:color/white">
+
+        <!-- User Message Input -->
+        <EditText
+            android:id="@+id/editTextUserMessage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Type your message here..."
+            android:inputType="textMultiLine"
+            android:maxLines="4"
+            android:imeOptions="actionSend"
+            android:padding="8dp"
+            android:textSize="16sp" />
+
+        <!-- Send Button -->
+        <Button
+            android:id="@+id/buttonSend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/round_button_background"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+
+</RelativeLayout>

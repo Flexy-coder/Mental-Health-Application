@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Feedback and Ratings Title -->
+    <TextView
+        android:id="@+id/textViewFeedbackRatingsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Feedback and Ratings"
+        android:textSize="24sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Feedback Section -->
+    <TextView
+        android:id="@+id/textViewFeedbackTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Feedback"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/textViewFeedbackRatingsTitle"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="4dp" />
+
+    <EditText
+        android:id="@+id/editTextFeedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Type your feedback here..."
+        android:inputType="textMultiLine"
+        android:maxLines="4"
+        android:padding="8dp"
+        android:textSize="16sp"
+        android:layout_below="@id/textViewFeedbackTitle"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edit_text_background" />
+
+    <!-- Ratings Section -->
+    <TextView
+        android:id="@+id/textViewRatingsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rate our App"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/editTextFeedback"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="4dp" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:stepSize="1"
+        android:layout_below="@id/textViewRatingsTitle"
+        android:layout_marginTop="8dp" />
+
+    <!-- Submit Button -->
+    <Button
+        android:id="@+id/buttonSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/round_button_background"
+        android:layout_below="@id/ratingBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+</RelativeLayout>

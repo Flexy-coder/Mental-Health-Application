@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="@android:color/background_light"
+    tools:context=".RatingsActivity">
+
+
+    <!-- Rating Title -->
+    <TextView
+        android:id="@+id/ratingTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rate This App"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Rating Stars -->
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:numStars="5"
+        android:rating="0"
+        android:stepSize="1" />
+
+    <!-- Rating Description -->
+    <TextView
+        android:id="@+id/ratingDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please rate your experience with this app."
+        android:textSize="16sp"
+        android:textColor="@android:color/darker_gray"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="32dp" />
+
+    <!-- Submit Button -->
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:background="@drawable/button_background"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:layout_gravity="center" />
+
+</LinearLayout>

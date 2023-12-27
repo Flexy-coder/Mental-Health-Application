@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:src="@drawable/logo"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitXY"
+        android:layout_marginBottom="20dp" />
+
+    <ImageView
+        android:id="@+id/profile_image"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/users"
+        android:layout_below="@id/imageView"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:id="@+id/change_image_icon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_photo"
+        android:layout_below="@id/profile_image"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/profile_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="22sp"
+        android:layout_below="@id/change_image_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/profile_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="23sp"
+        android:layout_below="@id/profile_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp" />
+
+    <TextView
+        android:id="@+id/profile_bio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text=""
+        android:textSize="22sp"
+        android:layout_below="@id/profile_email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/edit_full_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/rounded_gray_edittext_background"
+        android:hint="Full Name"
+        android:visibility="gone"
+        android:layout_below="@id/profile_bio"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/edit_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/rounded_gray_edittext_background"
+        android:hint="Username"
+        android:visibility="gone"
+        android:layout_below="@id/edit_full_name"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/edit_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/rounded_gray_edittext_background"
+        android:hint="Email"
+        android:visibility="gone"
+        android:layout_below="@id/edit_username"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/edit_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/rounded_gray_edittext_background"
+        android:hint="Description"
+        android:visibility="gone"
+        android:layout_below="@id/edit_email"
+        android:layout_centerHorizontal="true" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_add"
+        android:backgroundTint="@color/disabled_color" />
+
+</RelativeLayout>

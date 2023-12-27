@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Define the BAI questions -->
+    <string-array name="bai_questions">
+        <item>Numbness or tingling</item>
+        <item>Feeling hot</item>
+        <item>Wobbliness in legs</item>
+        <item>Unable to relax</item>
+        <item>Feeling of worst happening</item>
+        <item>Dizzy or lightheaded</item>
+        <item>Heart pounding/racing</item>
+        <item>Unsteady</item>
+        <item>Terrified or afraid</item>
+        <item>Nervous</item>
+        <item>Feeling of choking</item>
+        <item>Hands trembling</item>
+        <item>Shaky/unsteady</item>
+        <item>Fear of losing control</item>
+        <item>Difficulty in breathing</item>
+        <item>Fear of dying</item>
+        <item>Scared</item>
+        <item>Indigestion</item>
+        <item>Faint/lightheaded</item>
+        <item>Face flushed</item>
+        <item>Hot/cold sweats</item>
+        <!-- Add more questions here -->
+    </string-array>
+
+    <!-- Define the BAI responses -->
+    <string-array name="bai_responses">
+        <item>0 - Not at all</item>
+        <item>1 - Mildly</item>
+        <item>2 - Moderately</item>
+        <item>3 - Severely</item>
+    </string-array>
+
+    <!-- BDI Questions -->
+    <string-array name="bdi_questions">
+        <item>I do not feel sad.</item>
+        <item>I do not feel like crying.</item>
+        <item>I have not lost interest in things I used to enjoy.</item>
+        <item>I have no difficulty making decisions.</item>
+        <item>I do not feel unhappy.</item>
+        <item>I do not feel hopeless about the future.</item>
+        <item>I am not more irritable than usual.</item>
+        <item>I have not lost my appetite.</item>
+        <item>I am not losing weight without trying.</item>
+        <item>I am not worried about my health.</item>
+        <item>I have no difficulty sleeping or I sleep too much.</item>
+        <item>I do not feel tired .</item>
+        <item>I do not think about killing myself.</item>
+        <item>I do not feel disappointed in myself.</item>
+        <item>I do not feel I am worse than anybody else.</item>
+        <item>I do not cry any more than usual</item>
+        <item>I have not noticed any recent change in my interest in sex.</item>
+        <!-- Add more questions here -->
+    </string-array>
+
+    <!-- BDI Response Options -->
+    <string-array name="bdi_responses">
+        <item>0 - I dont feel this way.</item>
+        <item>1 - I feel this way much of the time.</item>
+        <item>2 - I feel this way all the time.</item>
+        <item>3 - I feel this so much that I cant stand it.</item>
+    </string-array>
+
+    <!-- PCL-5 Questions -->
+    <string-array name="pcl5_questions">
+        <item>Repeated,disturbing and unwanted memories of the stressful experience?</item>
+        <item>Repeated, disturbing dreams of the stressful experience?</item>
+        <item>Suddenly feeling or acting as if the stressful experience were actually happening again?</item>
+        <item>Feeling very upset when something reminded you of the stressful experience?</item>
+        <item>Having strong physical reactions when something reminded you of the stressful experience(for example, heart pounding, trouble breathing, sweating)?</item>
+        <item>Avoiding memories, thoughts or feelings related to the stressful experience?</item>
+        <item>Avoiding external reminders of the stressful experience(for example,people,places,conversations,activities,objects or situations)?</item>
+        <item>Trouble remembering important parts of the stressful experience?</item>
+        <item>Having strong negative beliefs about yourself,other people or the world(for example,having thoughts such as:I am bad, there is something seriously wrong with me, no one can be trusted, the world is completely dangerous)?</item>
+        <item>Blaming yourself or someone else for the stressful experience or what happened after it?</item>
+        <item>Having strong negative feelings such as fear, horror, anger, guilt or shame?</item>
+        <item>Loss of interest in activities that you used to enjoy?</item>
+        <item>Feeling distant or cut off from other people?</item>
+        <item>Trouble experiencing positive feelings(for example, being unable to feel happiness or have loving feelings for people close to you)?</item>
+        <item>Irritable behavior, angry outbursts, or acting aggressively?</item>
+        <item>Taking too many risks or doing things that could cause you harm?</item>
+        <item>Being "super alert" or watchful or on guard?</item>
+        <item>Feeling jumpy or easily startled?</item>
+        <item>Having difficulty concentrating?</item>
+        <item>Trouble falling or staying asleep?</item>
+        <!-- Add more questions here -->
+    </string-array>
+
+    <!-- PCL-5 Response Options -->
+    <string-array name="pcl5_responses">
+        <item>0 - Not at all</item>
+        <item>1 - A little bit</item>
+        <item>2 - Moderately</item>
+        <item>3 - Quite a bit</item>
+        <item>4 - Extremely</item>
+    </string-array>
+    <string-array name="search_criteria_array">
+        <item>Search Criteria</item> <!-- Default text -->
+        <item>Username</item>
+        <item>Email</item>
+        <!-- Add more criteria options if needed -->
+    </string-array>
+
+
+</resources>

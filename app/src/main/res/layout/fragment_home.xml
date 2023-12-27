@@ -1,0 +1,173 @@
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipeRefreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.home.HomeFragment">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#F4F6F6"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/firstCardView"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@color/white"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/lottie"
+                    android:layout_width="100dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="2dp"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/bot" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="This is a Mindful safe space."
+                        android:textColor="@color/black"
+                        android:textSize="19sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Your journey begins..."
+                        android:textColor="#777"
+
+                        android:textSize="17sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/text22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/firstCardView"
+            android:text="Therapists"
+            android:textSize="29sp" />
+        <TextView
+            android:id="@+id/moreTextView"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/firstCardView"
+            android:text="See all"
+            android:layout_marginStart="100dp"
+            android:textAlignment="textEnd"
+            android:layout_marginTop="25dp"
+            android:textSize="16sp"
+            android:layout_toEndOf="@+id/text22"/>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewTherapists"
+            android:layout_width="match_parent"
+            android:layout_height="290dp"
+            android:layout_below="@id/text22"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:clipToPadding="false"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp" />
+
+        <TextView
+            android:id="@+id/chat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chat with Mindy"
+            android:textSize="30sp"
+            android:layout_gravity="left"
+            android:layout_below="@id/recyclerViewTherapists"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="8dp"/>
+
+        <ImageView
+            android:id="@+id/chatImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_below="@id/chat"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/chatty" />
+
+
+        <TextView
+            android:id="@+id/counsel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Engage"
+            android:textSize="30sp"
+            android:layout_gravity="left"
+            android:layout_below="@+id/chatImageView"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/imageRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/counsel"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" />
+        <TextView
+            android:id="@+id/feedback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Feedback"
+            android:textSize="30sp"
+            android:layout_gravity="left"
+            android:layout_below="@+id/imageRecyclerView"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="2dp" />
+        <ImageView
+            android:id="@+id/feedbackImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_below="@id/feedback"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="100dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/feedback" />
+
+    </RelativeLayout>
+</ScrollView>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

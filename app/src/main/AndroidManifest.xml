@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- The Agora SDK requires Bluetooth permissions in case users are using Bluetooth devices. -->
+    <uses-permission android:name="android.permission.BLUETOOTH" /> <!-- For Android 12 and above devices, the following permission is also required. -->
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/br"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/br"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Mindful"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".OnboardingActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".FeedbackdataActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BookingdataActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TherapistListing3"
+            android:exported="false" />
+        <activity
+            android:name=".Journal2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".BookingAppointmentsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EasyChatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VideosessionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VideocallActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TherapistListing2"
+            android:exported="false" />
+        <activity
+            android:name=".CareActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MusicActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BreathingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LivechatsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ConversationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ChatroomdetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MessaginginterfaceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SendnotificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ChattingroomActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ChattingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TherapyJournalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VisualActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NotesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NotificationsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MessagesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfilesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminDashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TherapistloginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OnboardingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Adminlogin"
+            android:exported="false" />
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RatingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProgressActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.notifications.NotificationsFragment"
+            android:exported="false" />
+        <activity
+            android:name=".ui.home.HomeFragment"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.profile.ProfileFragment"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ChatForumActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TherapistListing"
+            android:exported="false" />
+        <activity
+            android:name=".GuestsHandlerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CounsellingSessionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CommunitySpaceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ChatCreateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ContactActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SessionsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".JournalEntryListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ForgotPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RecommendationsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ChatroomActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FeedbackActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AboutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MessagingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ChatbotActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NotificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ReminderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".JournalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WelcomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Dashboard"
+            android:exported="false"
+            android:label="@string/title_activity_dashboard" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".MediaPlayerService" />
+    </application>
+
+</manifest>

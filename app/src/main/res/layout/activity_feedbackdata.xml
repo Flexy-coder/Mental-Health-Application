@@ -1,0 +1,151 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="10dp"
+            android:text="Weekly Feedback"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+        <!-- Random Question 1 -->
+        <TextView
+            android:id="@+id/textViewQuestion1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Qn.1 How satisfied are you with your therapy session?"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroupOptions1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Random Options for Question 1 -->
+            <RadioButton
+                android:id="@+id/option1_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"/>
+
+            <RadioButton
+                android:id="@+id/option1_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2"/>
+
+            <RadioButton
+                android:id="@+id/option1_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3"/>
+
+            <RadioButton
+                android:id="@+id/option1_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4"/>
+        </RadioGroup>
+
+        <!-- Random Question 2 -->
+        <TextView
+            android:id="@+id/textViewQuestion2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Qn.2 On a scale from 1 to 10, how much improvement have you noticed in managing your condition?"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroupOptions2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Random Options for Question 2 -->
+            <RadioButton
+                android:id="@+id/option2_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"/>
+
+            <RadioButton
+                android:id="@+id/option2_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1-3"/>
+
+            <RadioButton
+                android:id="@+id/option2_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4-6"/>
+
+            <RadioButton
+                android:id="@+id/option2_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7-10"/>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textViewQuestion3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Qn.3 On a scale from 1 to 10, how well do you feel your therapist understands your concerns and experiences?"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroupOptions3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Random Options for Question 2 -->
+            <RadioButton
+                android:id="@+id/option3_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"/>
+
+            <RadioButton
+                android:id="@+id/option3_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1-3"/>
+
+            <RadioButton
+                android:id="@+id/option3_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4-6"/>
+
+            <RadioButton
+                android:id="@+id/option3_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7-10"/>
+        </RadioGroup>
+
+        <!-- Button to submit -->
+        <Button
+            android:id="@+id/buttonSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="24dp"/>
+    </LinearLayout>
+</ScrollView>

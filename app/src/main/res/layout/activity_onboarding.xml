@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".OnboardingActivity">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="100dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/logo"/>
+
+    <TextView
+        android:id="@+id/headerText"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Create your account"
+        android:textStyle="bold"
+        android:layout_below="@+id/imageViewLogo"
+        android:layout_marginStart="60dp"
+        android:textSize="25sp"/>
+
+
+    <TextView
+        android:id="@+id/instructions"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/headerText"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="3dp"
+        android:text="Follow the steps below and provide your details to create your account"
+        android:textAlignment="center"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/guide1"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/instructions"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="Step 1"/>
+    <TextView
+        android:id="@+id/uploadImage"
+        android:layout_width="330dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/guide1"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:textSize="18sp"
+        android:text="Click below to upload your profile image"/>
+    <ImageView
+        android:id="@+id/profileImageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/ic_user"
+        android:layout_below="@+id/uploadImage"
+        android:layout_marginTop="5dp"
+        android:scaleType="centerCrop"
+        android:layout_marginStart="80dp"
+        android:layout_gravity="center"
+        android:contentDescription="Profile Image"/>
+
+    <ImageButton
+        android:id="@+id/buttonUploadIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_add_a_photo_24"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:layout_alignBottom="@id/profileImageView"
+        android:layout_alignEnd="@id/profileImageView"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/textDescription"
+        android:layout_below="@id/profileImageView"
+        android:layout_width="320dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:textSize="18sp"
+        android:text="How best can you describe yourself as a therapist?"/>
+
+    <EditText
+        android:id="@+id/descriptionEditText"
+        android:layout_width="370dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/textDescription"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:minLines="4"
+        android:background="@drawable/edit_text_background"
+        android:hint="Describe yourself"
+        android:padding="10dp" />
+
+    <TextView
+        android:id="@+id/guide2"
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/descriptionEditText"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="Step 2"/>
+    <TextView
+        android:id="@+id/fullNameTextView"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/guide2"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:textSize="18sp"
+        android:text="Enter your full name."/>
+
+    <EditText
+        android:id="@+id/fullNamEditText"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/fullNameTextView"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edit_text_background"
+        android:hint="Enter full name"
+        android:padding="10dp" />
+
+    <TextView
+        android:id="@+id/guide3"
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:textSize="20sp"
+        android:layout_below="@+id/fullNamEditText"
+        android:textStyle="bold"
+        android:text="Step 3"/>
+    <TextView
+        android:id="@+id/textUsername"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/guide3"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:textSize="20sp"
+        android:text="Enter your preferred username."/>
+
+    <EditText
+        android:id="@+id/usernameEditText"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/textUsername"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edit_text_background"
+        android:hint="Enter username"
+        android:padding="10dp" />
+
+
+    <TextView
+        android:id="@+id/guide4"
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/usernameEditText"
+        android:layout_marginStart="10dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="Step 4"/>
+    <TextView
+        android:id="@+id/textInstitution"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/guide4"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:textSize="20sp"
+        android:text="What institution are you currently assigned to?"/>
+
+    <EditText
+        android:id="@+id/institutionEditText"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/textInstitution"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edit_text_background"
+        android:hint="Enter Institution"
+        android:padding="10dp" />
+
+    <TextView
+        android:id="@+id/textCode"
+        android:layout_width="330dp"
+        android:layout_below="@id/institutionEditText"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:textSize="20sp"
+        android:text="Please provide your employee code"/>
+
+
+    <EditText
+        android:id="@+id/employeeCodeEditText"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/textCode"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edit_text_background"
+        android:hint="Enter your code"
+        android:padding="10dp" />
+
+    <TextView
+        android:id="@+id/guide5"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/employeeCodeEditText"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="Step 5"/>
+    <TextView
+        android:id="@+id/textEmail"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/guide5"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:textSize="20sp"
+        android:text="Enter your email of choice."/>
+
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/textEmail"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edit_text_background"
+        android:hint="Enter email"
+        android:padding="10dp" />
+    <TextView
+        android:id="@+id/textPassword"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/emailEditText"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:textSize="20sp"
+        android:text="Enter your password."/>
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/textPassword"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:inputType="textPassword"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edit_text_background"
+        android:hint="Enter password"
+        android:padding="10dp" />
+    <TextView
+        android:id="@+id/textConfirmPassword"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/passwordEditText"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:textSize="20sp"
+        android:text="Confirm your password."/>
+
+    <EditText
+        android:id="@+id/confirmPasswordEditText"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/textConfirmPassword"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:inputType="textPassword"
+        android:background="@drawable/edit_text_background"
+        android:hint="Confirm password"
+        android:padding="10dp" />
+    <Button
+        android:id="@+id/createAccountButton"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="Create your account"
+        android:layout_below="@id/confirmPasswordEditText"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="10dp"
+        android:textColor="@android:color/black"
+        android:background="@drawable/button_background"
+        android:padding="12dp"
+        android:gravity="center"/>
+        </RelativeLayout>
+    </ScrollView>
+</androidx.cardview.widget.CardView>
